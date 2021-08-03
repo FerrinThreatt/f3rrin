@@ -1,0 +1,124 @@
+body{
+	background-color: black;
+}
+h1{
+  color: whitesmoke;
+	font-family: "Advent Pro"
+}
+.title{
+	color: whitesmoke;
+	font-family: 'Advent Pro', sans-serif;
+	align: left;
+	margin-left: 50px;
+	margin-top: 0;
+}
+.greeting{
+	align: left;
+	margin: 0px;
+	margin-left: 200px;
+	margin-top: 100px;
+	margin-bottom: -200px;
+	color: whitesmoke;
+	font-family: "Inconsolata";
+	font-size: 110pt;
+}
+.greeting2{
+	align: left;
+	/* bottom: 100px; */
+	margin: 0px;
+	margin-top: 200px;
+	margin-bottom: -110px;
+	margin-left: 200px;
+	/* top: 20px; */
+	color: white;
+	font-family: "Inconsolata";
+	font-weight: 100;
+	font-size: 110pt;
+	color: rgb(190, 202, 80)
+	/* rgb(81, 192, 129) */
+}
+p{
+	color: whitesmoke;
+	font-family: "Advent Pro"
+
+}
+
+.about-me{
+    font-family: "Inconsolata";
+    color: whitesmoke;
+		margin-top: -275px;
+		margin-right: 700px;
+		margin-left: 200px;
+		padding-left: -300px;
+}
+
+
+.bttn{
+  margin-left: auto;
+  margin-right: auto;
+	margin-top: 5px;
+	display: block;
+	position: relative;
+	top: 20px;
+	background-color: rgb(190, 202, 80);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+	transition-duration: 0.4s;
+}
+
+.bttn {
+  background-color: rgb(190, 202, 80);
+  color: black;
+  border: 2px solid #white;
+}
+
+.bttn:hover {
+  background-color: white;
+  color: black;
+}
+
+#song-thumbnail{
+    width: 300px;
+    height: 300px;
+
+}
+
+img{
+	position:relative;
+	display: block;
+  margin-left: 700px;
+	top:-200px;
+	right: -100px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 95px;
+  text-decoration: none;
+	font-family: "Inconsolata";
+
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}

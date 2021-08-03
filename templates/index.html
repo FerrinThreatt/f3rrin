@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> F3RRIN </title>
+	 <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Orbitron:wght@800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+	 <link href="../static/styles.css" rel="stylesheet" type="text/css">
+   <script src="../static/script.js"></script>
+   <!-- <script type="text/javascript" src="{{ url_for('static', filename = 'script.js') }}"></script> -->
+</head>
+  <body>
+
+    <div class = "top-bar">
+    <center><h1 class="title"> F 3 R R ! N </h1></center>
+    <ul class= "menu-bar">
+  <li><a href="enterPage.html">Home</a></li>
+  <li><a href="media.html">Media</a></li>
+  <li><a href="aboutMe.html">About Me</a></li>
+  <li><a href="aboutMe.html">Contact</a></li>
+  <li><a href="aboutMe.html">Blog</a></li>
+</ul>
+</div>
+        {% block content %}
+      <div class= "greeting-container">
+      <h1 class= "greeting"> Hello, </h1>
+      <h1 class= "greeting2">
+      User
+      </h1>
+      <!-- <script>
+	       var name = prompt("Enter your first name");
+         document.getElementById("outputName").innerText = name;
+         document.write(name)
+       </script> -->
+      <img src="../images/ferrinDev.JPG" alt"myface" width = "300" height = "400"></img>
+	  <div class= "about-me"> Hey my name is <b>F3RRIN</b>, I'm a 20 year old software engineer who is interested in Artificial Intelligence, VR, Music and Graphics. At the moment, this website will be an archive of what I find interesting/appealing. Explore. </p>
+    <a href = "enterPage.html">
+    <button class="bttn enter"> ENTER </button>
+  </a>
+
+
+
+  </body>
+</div>
+    {%end block%}
+</html>
