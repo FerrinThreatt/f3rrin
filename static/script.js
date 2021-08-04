@@ -1,3 +1,24 @@
+//
+// const APIController = (function() {
+//
+//     const clientId = '8f4eaeec713242dea18e8654b0bf917c';
+//     const clientSecret = '6cef2c6376ec46a2853973f986384ff';
+//
+//     // private methods
+//     const _getToken = async () => {
+//
+//         const result = await fetch('https://accounts.spotify.com/api/token', {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type' : 'application/x-www-form-urlencoded',
+//                 'Authorization' : 'Basic ' + btoa(clientId + ':' + clientSecret)
+//             },
+//             body: 'grant_type=client_credentials'
+//         });
+//
+//         const data = await result.json();
+//         return data.access_token;
+//     }
 
 
 const _getToken = async () => {
@@ -17,7 +38,7 @@ const _getToken = async () => {
 }
 async function fetchId() {
 
-  const accessToken = 'BQCEmxnRwtxERD8WWYUhbE_aGMrlI-FNSWOWlRY3gtbJtxO7UoM4Dr4rSWjjrF2ug50L-GyJyrO4f-u_6dIyQIzBPy9BoC2yN-OI555f87xmTng30t2WLczsLR1w3G24pEsn7pwj-KvsrfhRMIcgAB9IZbmeupG8'
+  const accessToken = 'BQCLQxWfIB0p_rtW41hMbLB42eErDrYCpOvDxBrXFu5YIPXMZEZAZ9XjqETibrKZ-qrlsgzIeSwfFE-hIY35ZRzYGCtVe39-8wZjunYtPlIyzm7zEiZPtr7cAXCVUyNCn-M6z3jjyCg-mF8_FHeEJa2mYjxPL82iZRg'
   const response = await fetch('https://api.spotify.com/v1/me/player/currently-playing',{
     method: 'GET', headers: {
       'Accept': 'application/json',

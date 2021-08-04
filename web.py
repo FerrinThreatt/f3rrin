@@ -1,15 +1,27 @@
 from flask import Flask, redirect, url_for, render_template, send_from_directory
-
+import os
 
 app = Flask(__name__)
 
+picFolder = os.path.join('static','images')
+
+app.config['UPLOAD_FOLDER'] = picFolder
+
 @app.route("/")
 def home():
-    return render_template("index.html")
+    image_names = os.path.join(app.config['UPLOAD_FOLDER'],"ferrinDev.JPG")
+    return render_template("index.html",user_image = image_names)
+
+@app.route("/index.html")
+def home_page():
+    image_names = os.path.join(app.config['UPLOAD_FOLDER'],"ferrinDev.JPG")
+    return render_template("index.html",user_image = image_names)
 
 @app.route("/enterPage.html")
 def enterPage():
     return render_template("enterPage.html")
+
+
 
 # @app.route("/script")
 # def scriptFunc():
