@@ -1,45 +1,3 @@
-//
-// const APIController = (function() {
-//
-//     const clientId = '8f4eaeec713242dea18e8654b0bf917c';
-//     const clientSecret = '6cef2c6376ec46a2853973f986384ff';
-//
-//     // private methods
-//     const _getToken = async () => {
-//
-//         const result = await fetch('https://accounts.spotify.com/api/token', {
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type' : 'application/x-www-form-urlencoded',
-//                 'Authorization' : 'Basic ' + btoa(clientId + ':' + clientSecret)
-//             },
-//             body: 'grant_type=client_credentials'
-//         });
-//
-//         const data = await result.json();
-//         return data.access_token;
-//     }
-// const APIController = (function() {
-//
-//     const clientId = 'ADD YOUR CLIENT ID';
-//     const clientSecret = 'ADD YOUR CLIENT SECRET';
-//
-//     // private methods
-//     const _getToken = async () => {
-//
-//         const result = await fetch('https://accounts.spotify.com/api/token', {
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type' : 'application/x-www-form-urlencoded',
-//                 'Authorization' : 'Basic ' + btoa(clientId + ':' + clientSecret)
-//             },
-//             body: 'grant_type=client_credentials'
-//         });
-//
-//         const data = await result.json();
-//         return data.access_token;
-//     }
-
 const _getToken = async () => {
 
   const result = await fetch('https://accounts.spotify.com/api/token', {
@@ -57,7 +15,7 @@ const _getToken = async () => {
 }
 async function fetchId() {
 
-  const accessToken = 'BQCLQxWfIB0p_rtW41hMbLB42eErDrYCpOvDxBrXFu5YIPXMZEZAZ9XjqETibrKZ-qrlsgzIeSwfFE-hIY35ZRzYGCtVe39-8wZjunYtPlIyzm7zEiZPtr7cAXCVUyNCn-M6z3jjyCg-mF8_FHeEJa2mYjxPL82iZRg'
+  const accessToken = 'BQDs1J9YnjiNnYwVkhBguYA9jOL5476Aheeoi7YzxM8bSmeozdTnzIs17sygLDRRmKdZnm8p0ziMCxDsvETwl-ZbK6hjNFEMWux1gMf4KopUCU85wvuALs6YDe-otQHSi0hyVdLRPPOhZ0prnqI57tSSAoI3tAXi1vRfKnJf'
   const response = await fetch('https://api.spotify.com/v1/me/player/currently-playing',{
     method: 'GET', headers: {
       'Accept': 'application/json',
@@ -82,7 +40,7 @@ async function fetchId() {
 }
   async function fetchRecentlyPlayed() {
 
-    const accessToken2 = 'BQCYWXL2-17Kb8i0iVoUEari8M-zcKh0MbDYQtzU2UNa2DFTBzSHDjybZ2Bk5-sktdqJ_A8kpWtpf7ZOjRwmMHvFv9a4IPQ0RPn-vyWJQ39fozlMGI5f7zy1ZD_QBeGUxfMPBPknRrb_xwmMZWWbDoNYQIWXPAlJ9iqxsjw1'
+    const accessToken2 = ''
     const response = await fetch('https://api.spotify.com/v1/me/player/recently-played',{
       method: 'GET', headers: {
         'Accept': 'application/json',

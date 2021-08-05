@@ -122,3 +122,12 @@ li a {
 li a:hover {
   background-color: #111;
 }
+
+/* #song_title,  #artist  {
+    text-decoration:  none;
+    color:  #569fac;
+}
+
+#song_title:hover  {
+    opacity:  0.6;
+} */
