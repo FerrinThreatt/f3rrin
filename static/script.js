@@ -15,7 +15,7 @@ const _getToken = async () => {
 }
 async function fetchId() {
 
-  const accessToken = 'BQDs1J9YnjiNnYwVkhBguYA9jOL5476Aheeoi7YzxM8bSmeozdTnzIs17sygLDRRmKdZnm8p0ziMCxDsvETwl-ZbK6hjNFEMWux1gMf4KopUCU85wvuALs6YDe-otQHSi0hyVdLRPPOhZ0prnqI57tSSAoI3tAXi1vRfKnJf'
+  const accessToken = ''
   const response = await fetch('https://api.spotify.com/v1/me/player/currently-playing',{
     method: 'GET', headers: {
       'Accept': 'application/json',
